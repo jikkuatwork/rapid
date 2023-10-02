@@ -38,12 +38,21 @@
 
     <script src="https://unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.toolbomber.com/js/WebArray.min.js" defer></script>
-    <script src="./app.js" defer></script>
-    <script defer src="/_vercel/insights/script.js"></script>
+    <script src="./app.js"></script>
+    <script src="/_vercel/insights/script.js" defer></script>
   </head>
   <body>
-    <div class="page bg-dark-100 c">
-      <div class="w-full h-screen max-w-3xl bg-dark-200"></div>
+    <div x-data="$store.app" class="page bg-dark-100 c">
+      <div class="w-full min-h-screen max-w-3xl bg-dark-200 c">
+        <div
+          id="greeter"
+          x-text="greeting"
+          class="p-4 bg-yellow-300 c-p select-none"
+          @click="handleGreetingClick()"
+        >
+          Hello there!
+        </div>
+      </div>
     </div>
   </body>
 </html>
