@@ -1,10 +1,10 @@
-document.addEventListener("alpine:init", () => {
-  Alpine.store("app", {
-    greeting: "Hey there!",
-    handleGreetingClick() {
-      console.log("Clicked: ", this.greeting)
-    },
-  })
+import Alpine from "https://cdn.skypack.dev/alpinejs@3.10.2"
 
-  window.$S = Alpine.store("app")
+Alpine.store("app", {
+  message: "Hola!",
+  handleClick(name) {
+    this.message = "Rapid Ready!"
+  },
 })
+
+Alpine.start()
