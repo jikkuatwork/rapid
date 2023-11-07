@@ -8,3 +8,4 @@ Alpine.store("app", {
 })
 
 Alpine.start()
+window.app = Alpine.store("app")
