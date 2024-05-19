@@ -1,4 +1,4 @@
-import { createApp } from "https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js"
+import { createApp } from "https://cdn.skypack.dev/petite-vue@0.4.1"
 
 import { store } from "./store.js"
 import { Avatar } from "./components/Avatar/index.js"
