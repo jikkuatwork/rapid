@@ -1,3 +1,5 @@
+import _ from "lodash"
+
 export const args = {
   label: "Petite Vue Rocks!",
   handleClick: () => console.log("Click!"),
@@ -9,7 +11,7 @@ const Example = props => {
   const $template = /* HTML */ `
     <div class="">
       <div
-        class="p-2 bg-yellow-300 rounded cp select-none"
+        class="p-2 bg-yellow-300 rounded cp select-none tw-text-600 font-medium"
         @click="handleClick"
       >
         {{ label }}
